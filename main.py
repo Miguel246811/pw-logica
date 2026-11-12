@@ -1,22 +1,12 @@
-pergunta1 = "Qual seu Idolo?"
-pergunta2 = "Qual seu filme Favorito?"
-pergunta3 = "Qual seu hoby Favorito?"
-pergunta4 = "Você ja fez algum curso?"
-pergunta5 = "Qual sua idade?"
-idolo = "Paixão Cortes"
-filme = "Até o Último Homem"
-hoby = "Andar a cavalo"
-cursos = "sim"
-idade = "14"
+nome = input("Qual seu nome:")
+idade = input("Qualsua idade:")
+altura = input("Qual seua altura:")
+escola = input("Em qual escola você estuda:")
+cidade = input("Em qual cidade você mora:")
 
-print(pergunta1)
-print(idolo)
-print(pergunta2)
-print(filme fav)
-print(pergunta3)
-print(hoby)
-print(pergunta4)
-print(cursos)
-print(pergunta5)
-print(idade)
+print("Seu nome é", nome)
+print("Sua idade é", idade)
+print("Sua altura é", altura)
+print("Sua escola é", escola)
+print("Sua cidade é", cidade)
 
