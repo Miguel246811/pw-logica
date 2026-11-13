@@ -1,9 +1,10 @@
-nomes = ["Lucas", "Vinicios", "Davi", "Arthur S", "Toddynho", "Arthut F",
-        "Maria", "Pietra", "Miguel", "Apollo", "Bernardo", "Erick",
-        "Kaua"]
+nome = "MIguel"
+iade = 14
+altura = 1.70
+aprovado = True
 
-print(nomes[10])
-print(nomes[7])
-print(nomes[2])
-print(nomes[4])
-print(nomes[12])
+print(type(nome))
+print(type(idade))
+print(type(altura))
+print(type(aprovado))
+
