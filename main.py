@@ -1,9 +1,13 @@
-idade = int(input("Idade"))
 
-if idade >= 18:
-    print("Você é maior de idade!")
+nota = float(input("Sua nota: ").replace(",",","))
 
+if nota >= 9:
+    print("Conceito A - Excelente!")
+elif nota >= nota >= 7:  
+    print("Conceito B - Bom!")
+elif nota >= 5:    
+    print("Conceito C - Regular")
 else:
-    print("Você é menor de idade!")
+    print("Conceito D - Reprovado")
 
 
