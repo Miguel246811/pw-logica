@@ -1,14 +1,9 @@
-print("=== CALCULADORA DE DESCONTO ===")
-produto = input("Nome do produto: ")
-preco = float(input("Preço: R$")).replace(("," "."))
-desconto = float(input("Desconto (%): "))
+idade = int(input("Idade"))
 
-valor_desconto = preco * (desconto / 100)
-preco_final = preco - valor_desconto
+if idade >= 18:
+    print("Você é maior de idade!")
 
-print(f"\nProduto: {produto}")
-print(f"Preço Original: R$ {preco:.2f}")
-print(f"Desconto: R$ {valor_desconto:.2f}")
-print(f"Preço final: R$ {preco_final:.2f}")
+else:
+    print("Você é menor de idade!")
 
 
