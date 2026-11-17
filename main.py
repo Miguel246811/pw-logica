@@ -1,20 +1,17 @@
-idade = int(input("Digite sua idade: "))
+print("=== PAR OU ÍMPAR ===")
+nome1 = input("Nome do jogador 1: ")
+nome2 = input ("Nome do jogador 2: ")
+escolha = input(f"{nome1}, Você escolhe (par/ímpar): ").lower()
 
-if idade == 0:
+n1 = int(input(f"{nome1}, seu número:  "))
+n2 = int(input(f"{nome2}, seu número:  "))
 
-    print("Idade invalida")
+soma = n1 + n2
+resultado = "par" if soma % 2 == 0 else "impar"
 
-elif idade <= 12:
+print(f"\n{n1} + {n2} = {soma} ({resultado})")
 
-    print("Criança")
-
-elif idade <= 17:
-
-    print("Adolescente")
-
-elif idade <= 18:
-
-    print("Adulto")
-
-elif idade >= 60:
-    print("Idoso")
+if escolha == resultado:
+    print(f"{nome1} ganhou!")
+else:
+    print(f"{nome2} ganhou")
