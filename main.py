@@ -1,15 +1,16 @@
-nome = input("Qual seu nome? ")
+idade = int(input("Digite sua idade: "))
+nota = float(input("Sua nota: ").replace(",", "."))
 
-altura = float(input("Digite sua altura em metros: "))
-peso = float(input("Digite seu peso em KG: "))
+if idade >= 18:
+    print("Você e maior de idade")
+if nota == 10:
+    print("Nossa parabens")
 
-imc = peso / (altura ** 2)
+else: 
+    print("Você e menor de idade")
+elif nota != 0:
+    print("Foi mal em")
 
-if imc < 18.5:
-    print("IMC abaixo do peso 18.5")
-
-elif imc < 25:
-    print("IMC entre 18.5 e 24.9 na media")
-
-else:
-    print("IMC igual ou acima de 25 gordo")
+if nota >= 7:
+ print("Boua")
+    
