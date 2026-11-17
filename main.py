@@ -1,16 +1,12 @@
-idade = int(input("Digite sua idade: "))
-nota = float(input("Sua nota: ").replace(",", "."))
+num1 = float(input("Digite um valor: "))
+num2 = float(input("Digite um valor: "))
 
-if idade >= 18:
-    print("Você e maior de idade")
-if nota == 10:
-    print("Nossa parabens")
+soma = num1 + num2
+subt = num1 - num2
+mult = num1 * num2
+div = num1 / num2
 
-else: 
-    print("Você e menor de idade")
-elif nota != 0:
-    print("Foi mal em")
-
-if nota >= 7:
- print("Boua")
-    
+print("o resultado da soma é:",soma)
+print("o resultado da subtração é:",subt)
+print("o resultado da multiplicação é:",mult)
+print("o resultado da divisão é:",div)
