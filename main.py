@@ -1,9 +1,21 @@
-numero = int(input("Digite um número inteiro positivo: "))
+import random
 
-for contador in reversed(range(numero + 1))
-    print(contador)
+numero_secreto = random.randint(1, 20)
+tentativas = 0
+palpite = int(input(
+    "Tente adivinhar um numero entre 1 e 20:"))
 
-print("Feliz lançamento! ")
-   
+while palpite != numero_secreto:
+    tentativas += 1
+    if palpite < numero_secreto:
+        print("O número secreto é maior!")
+    else:
+        print("O numero secreto é menor!")
+    palpite = int(input("Tente novamente:"))
+tentativas += 1
+print("Parabéns! Você acertou!✅")
+print(f"O numero secreto era: {numero_secreto}")
+print(f"Você utilizou {tentativas} tentativas.")
+
     
           
