@@ -1,33 +1,17 @@
-opcao = 0
+aluno1 = "Apollo"
+aluno2 = "Miguel"
+aluno3 = "Bernardo"
 
-while opcao != 4:
-    print("\n===== Menu de Operações =====")
-    print("1 - Mostrar mensagem de boas-vindas!")
-    print("2 - Mostrar a tabuada de um número")
-    print("3 - Informar se um número é par ou ímpar")
-    print("4 - Sair")
+alunos = ["Pedro", "Miguel", "Apollo", "Bernardo"]
+print(alunos)
+alunos.remove("João")
+alunos.pop(2)
+print(alunos)
 
-    opcao = int(input("Escolha uma opção: "))
+quantidade = len(alunos)
+print(f"Temos {quantidade} alunos cadatrados. ")
 
-    if opcao == 1:
-        print("\nSeja bem-vindo ao programa!")
-
-    elif opcao == 2:
-        numero = int(input("Digite um número para ver a tabuada: "))
-
-        for contador in range(1, 11):
-            print(f"{numero} x {contador} = {numero * contador}")
-
-    elif opcao == 3:
-        numero = int(input("Digite um número: "))
-
-        if numero % 2 == 0:
-            print(f"O número {numero} é PAR!")
-        else:
-            print(f"O número {numero} é ÍMPAR!")
-
-    elif opcao == 4:
-        print("\nEncerrando o painel... Até mais!")
-
-    else:
-        print("Opção inválida! Tente novamente.")
+for aluno in alunos:
+    print(f"Olá, {aluno}!")
+for contador in range(4):
+    print(alunos[contador])
