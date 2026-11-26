@@ -1,16 +1,16 @@
-filmes = [
-    "Vingadores: Ultimato",
-    "Titanic",
-    "Harry Potter",
-    "O Rei Leão",
-    "Homem-Aranha"
-    ]
+## lista -> [] - permite alterações
+## tupla -> () - não permite alterações
+## dicionário -> {}
 
-print("Lista de filmes:")
-print(filmes)
+alunos = {
+"João": 8,
+"Maria": 9,
+"Pedro": 5,
+"Ana": 6
+}
 
-print("\nPrimeiro filme:")
-print(filmes[0])
-
-print("\nÚltimo filme:")
-print(filmes[-1])
+for nome, nota in alunos.items():
+    if nota >= 7:
+        print(f"{nome} está Aprovado(a)")
+    else:
+        print(f"{nome} está Reprovado(a)")
