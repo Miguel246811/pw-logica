@@ -1,17 +1,16 @@
-aluno1 = "Apollo"
-aluno2 = "Miguel"
-aluno3 = "Bernardo"
+filmes = [
+    "Vingadores: Ultimato",
+    "Titanic",
+    "Harry Potter",
+    "O Rei Leão",
+    "Homem-Aranha"
+    ]
 
-alunos = ["Pedro", "Miguel", "Apollo", "Bernardo"]
-print(alunos)
-alunos.remove("João")
-alunos.pop(2)
-print(alunos)
+print("Lista de filmes:")
+print(filmes)
 
-quantidade = len(alunos)
-print(f"Temos {quantidade} alunos cadatrados. ")
+print("\nPrimeiro filme:")
+print(filmes[0])
 
-for aluno in alunos:
-    print(f"Olá, {aluno}!")
-for contador in range(4):
-    print(alunos[contador])
+print("\nÚltimo filme:")
+print(filmes[-1])
