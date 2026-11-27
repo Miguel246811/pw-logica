@@ -1,7 +1,4 @@
-compras = ["Arroz", "Feijão", "Leite"]
-print(*"Lista inicial:")
-print(compras)
-compras.append("Café")
-print("Lista Atualizada:")
-print(compras)
-print(len(compras))
+nomes = ["Kauã", "Erick", "Lucas", "Miguel", "Bernardo"]                        
+    
+for indice, nome in enumerate(nomes, start=1):
+    print(f"{indice}º - {nome}")
